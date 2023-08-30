@@ -12,12 +12,12 @@
             <p class="m-0"><a href="/">Plant Detection</a></p>
         </nav>
 
-        <section class="image-detection d-flex justify-content-center align-items-center w-50 m-auto mt-5">
-            <div>
+        <section class="image-detection d-flex justify-content-center align-items-center m-auto mt-5 px-4">
+            <div class="d-flex flex-column align-items-center justify-content-center">
                 {% if title == "" %} 
                     <h4 class="text-center">Choose Image</h4>
                 {% else %}
-                    <h4 class="text-center">{{title}}</h4>
+                    <h4 class="text-center text-capitalize">{{title}}</h4>
                 {% endif %}
 
                 {% if image == "" %} 
@@ -29,7 +29,7 @@
             <div>
                 <form action="/" method="POST" class="d-flex flex-column" enctype="multipart/form-data">
                     <input type="file" name="image" id="image" accept=".png, .jpg" required>
-                    <input type="submit" value="Predict">
+                    <input type="submit" value="Predict" class="px-2 py-1 ">
                 </form>
             </div>
         </section>
