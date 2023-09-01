@@ -31,5 +31,5 @@ def get_model(plant):
         return 'models/potato.h5', potato
     if plant == 2:
         return 'models/corn.h5' , corn
-    if plant == 4:
+    if plant == 3:
         return 'models/grape.h5' , grape
